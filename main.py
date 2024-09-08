@@ -1,8 +1,11 @@
 import os
 from datetime import date, time, datetime
 import datetime
+import random
+
+
 if __name__=="__main__":
-    total_day = 5 #total days back
+    total_day = 365 #total days back
     commit_frequency = 10 #commit time per day
     repo_link = "https://github.com/al1zha/active.git" #"https://github.com/aliifam/github-activity-generator.git"
 
@@ -19,7 +22,7 @@ if __name__=="__main__":
     pointer = 0
 
     while tl > 0:
-        ct = commit_frequency
+        ct = random.randint(0, commit_frequency)
         while ct > 0:
             f = open("commit.txt", "a+")
             l_date = now + datetime.timedelta(days=-pointer)
