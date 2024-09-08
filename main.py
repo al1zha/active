@@ -5,7 +5,7 @@ import random
 
 
 if __name__=="__main__":
-    total_day = 365 #total days back
+    total_day = 5 #total days back
     commit_frequency = 7 #commit time per day
     repo_link = "https://github.com/nrbkv/active.git" #"https://github.com/aliifam/github-activity-generator.git"
 
@@ -37,6 +37,6 @@ if __name__=="__main__":
         pointer+=1
         tl-=1
 
-    os.system(f"git remote add origin {repo_link}")
+    #os.system(f"git remote add origin {repo_link}")
     os.system("git branch -M main")
     os.system("git push -u origin main -f")
