@@ -5,9 +5,9 @@ import random
 
 
 if __name__=="__main__":
-    total_day = 365 // 2 #total days back
+    total_day = 365 #total days back
     commit_frequency = 7 #commit time per day
-    repo_link = "https://github.com/al1zha/not_active.git" #"https://github.com/aliifam/github-activity-generator.git"
+    repo_link = "https://github.com/nrbkv/active.git" #"https://github.com/aliifam/github-activity-generator.git"
 
     tl = total_day #time day
     ctr = 1
